@@ -1,5 +1,8 @@
-# revuit
-By Muhammad Lutfi Fahreza
+# Revuit Frontend
+This repository contains the backend part of the Revuit Web
+
+## Link to Frontend Part
+https://github.com/mlutfifahreza/revuit-backend.git
 
 # Getting Started with Create React App
 
