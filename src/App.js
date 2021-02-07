@@ -9,21 +9,35 @@ import ShowReview from "./components/review-show";
 import EditReview from "./components/review-edit";
 import CreateReview from "./components/review-create";
 import Register from "./components/register";
+import { Component } from 'react';
 
-function App() {
-  return (
-    <Router>
-      <Navbar />
-      <main className="container h-100 mb-auto mt-3">
-        <Route path="/" exact component={Reviews} />
-        <Route path="/review-edit/:id" component={EditReview} />
-        <Route path="/review-show/:id" component={ShowReview} />
-        <Route path="/review-add" component={CreateReview} />
-        <Route path="/register" component={Register} />
-      </main>
-      <Footer/>
-    </Router>
-  );
+class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+      loggedIn : false,
+      username : null
+    }
+    // this.updateUser = this.updateUser.bind(this)
+  }
+
+  // componentDidMount() {}
+
+  render() {
+    return (
+      <Router>
+        <Navbar />
+        <main className="container h-100 mb-auto mt-3">
+          <Route path="/" exact component={Reviews} />
+          <Route path="/review-edit/:id" component={EditReview} />
+          <Route path="/review-show/:id" component={ShowReview} />
+          <Route path="/review-add" component={CreateReview} />
+          <Route path="/register" component={Register} />
+        </main>
+        <Footer/>
+      </Router>
+    );
+  }
 }
 
 export default App;
