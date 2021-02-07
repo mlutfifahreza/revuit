@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.review img {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 100%;
+  height: 200px;
+}
+
+body{
+  background-color: #bee5d3;
+  height: 100vh;
+}
+
+#root{
+  display:flex; 
+  flex-direction:column; 
+  min-height: 100%;
+}
+
+footer{
+  margin-top: auto;
+}
+
+/* 
+COLOR
+dark gray
+#343A40
+green dark-lighter
+#33606E
+#248B8B
+
+*/
